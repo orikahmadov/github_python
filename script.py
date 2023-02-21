@@ -1,7 +1,7 @@
 from github import Github
 import os
 
-
+"""GET YOUR ACCESS API TOKEN FROM GITHUB>SETTINGS>DEVELOPERS SETTING>CLassic.."""
 
 token =  os.getenv("GITHUB_TOKEN")
 g = Github(token)
