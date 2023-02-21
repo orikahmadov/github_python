@@ -16,8 +16,7 @@ def clone_repo(user):
     repo_name = input("Enter repo name: ")
     repo = user.get_repo(repo_name)
     clone_url = repo.clone_url
-    os.system("cd ../")
-    os.system("git clone " + clone_url)
+    os.system("cd ../; git clone " + clone_url)
 
 def create_repo(user):
     repo_name = input("Enter repo name: ")
