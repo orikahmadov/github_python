@@ -1,11 +1,13 @@
 In order to run this script
 
-1.Create API ACCESS TOKEN on github>settings>Developer settings>Personal access tokens>tokens classic
+1.pip install -r requirements.txt
 
-2.After generating and setting expiry date copy the token
+3.Create API ACCESS TOKEN on github>settings>Developer settings>Personal access tokens>tokens classic
 
-3.nano ~/.barch and add export GITHUB_TOKEN="YOUR ACCESS TOKEN"
+4.After generating and setting expiry date copy the token
 
-4.source ~/.bashrc
+5.nano ~/.barch and add export GITHUB_TOKEN="YOUR ACCESS TOKEN"
 
-this is it 
+6.source ~/.bashrc
+
+this is it !
