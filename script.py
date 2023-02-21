@@ -48,12 +48,14 @@ def delete_multiple_repos(user):
 
 def main():
     while True:
+        print("\n")
         print("1. List all repos")
         print("2. Clone a repo")
         print("3. Create a repo")
         print("4. Delete a repo")
         print("5. Delete multiple repos")
         print("6. Exit")
+        print("\n")
         choice = int(input("Enter your choice: "))
         if choice == 1:
             list_repos(user)
