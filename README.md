@@ -6,7 +6,7 @@ In order to run this script
 
 4.After generating and setting expiry date copy the token
 
-5.nano ~/.barch and add export GITHUB_TOKEN="YOUR ACCESS TOKEN"
+5.nano ~/.bashrc and add export GITHUB_TOKEN="YOUR ACCESS TOKEN"
 
 6.source ~/.bashrc
 
