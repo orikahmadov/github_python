@@ -7,24 +7,27 @@ token =  os.getenv("GITHUB_TOKEN")
 g = Github(token)
 user =  g.get_user()
 
-def list_repos(user):
+def list_repos(user): #list all repos
     for repo in user.get_repos():
         #list all repos with numbers
-        print(repo.name)
+        print(repo.name) #
 
 def clone_repo(user):
+    """ Clone a repo from github"""
     repo_name = input("Enter repo name: ")
     repo = user.get_repo(repo_name)
     clone_url = repo.clone_url
     os.system("cd ../; git clone " + clone_url)
 
 def create_repo(user):
+    """ Create a  repo on github"""
     repo_name = input("Enter repo name: ")
     description = input("Enter description: ")
     repo = user.create_repo(repo_name, description=description)
     print("Repo created successfully")
 
 def delete_repo(user):
+    """ Delete a repo from github"""
     for repo in user.get_repos():
         print(repo.name)
     repo_name = input("Enter repo name: ")
@@ -74,12 +77,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-    
-
-
-
-
-
-
-
